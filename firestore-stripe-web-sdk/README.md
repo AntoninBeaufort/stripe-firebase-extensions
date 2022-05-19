@@ -23,7 +23,7 @@ web SDK, and configure the library to use the same Firestore collections you con
 the extension to use.
 
 ```js
-import { getApp } from "@firebase/app";
+import { getApp } from "firebase/app";
 import { getStripePayments } from "@stripe/firestore-stripe-payments";
 
 const app = getApp();
@@ -134,9 +134,9 @@ onCurrentUserSubscriptionUpdate(
 
 # Dependencies
 
-* Cloud Firestore (`@firebase/firestore`)
-* Firebase Auth (`@firebase/auth`)
-* Firebase Core (`@firebase/app`)
+* Cloud Firestore (`firebase/firestore`)
+* Firebase Auth (`firebase/auth`)
+* Firebase Core (`firebase/app`)
 
 # Build, test, release
 

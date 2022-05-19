@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { FirebaseApp } from "@firebase/app";
+import { FirebaseApp } from "firebase/app";
 import {
   collection,
   CollectionReference,
@@ -35,7 +35,7 @@ import {
   QuerySnapshot,
   where,
   WhereFilterOp,
-} from "@firebase/firestore";
+} from "firebase/firestore";
 import { StripePayments, StripePaymentsError } from "./init";
 import { checkNonEmptyString } from "./utils";
 
@@ -216,7 +216,7 @@ export interface GetProductsOptions {
   limit?: number;
 }
 
-export { WhereFilterOp } from "@firebase/firestore";
+export { WhereFilterOp } from "firebase/firestore";
 
 /**
  * A filter constraint that can be applied to database queries. Consists of a field name (in
@@ -400,6 +400,7 @@ class FirestoreProductDAO implements ProductDAO {
   private async getProductSnapshotIfExists(
     productId: string
   ): Promise<QueryDocumentSnapshot<Product>> {
+    console.log(this.firestore, this.productsCollection, productId);
     const productRef: DocumentReference<Product> = doc(
       this.firestore,
       this.productsCollection,
@@ -478,6 +479,7 @@ class FirestoreProductDAO implements ProductDAO {
   private async getPriceSnapshots(
     productId: string
   ): Promise<QuerySnapshot<Price>> {
+    console.log(this.firestore, this.productsCollection, productId);
     const pricesCollection: CollectionReference<Price> = collection(
       this.firestore,
       this.productsCollection,

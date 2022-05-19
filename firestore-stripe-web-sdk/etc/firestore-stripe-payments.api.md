@@ -4,8 +4,8 @@
 
 ```ts
 
-import { FirebaseApp } from '@firebase/app';
-import { WhereFilterOp } from '@firebase/firestore';
+import { FirebaseApp } from 'firebase/app';
+import { WhereFilterOp } from 'firebase/firestore';
 
 // @public
 export interface CommonLineItemParams {

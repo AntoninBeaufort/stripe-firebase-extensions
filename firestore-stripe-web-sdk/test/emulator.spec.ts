@@ -15,7 +15,7 @@
  */
 
 import { expect, use } from "chai";
-import { deleteApp, FirebaseApp, initializeApp } from "@firebase/app";
+import { deleteApp, FirebaseApp, initializeApp } from "firebase/app";
 import {
   collection,
   collectionGroup,
@@ -36,7 +36,7 @@ import {
   updateDoc,
   WriteBatch,
   writeBatch,
-} from "@firebase/firestore";
+} from "firebase/firestore";
 import {
   createCheckoutSession,
   getCurrentUserPayment,
@@ -86,7 +86,7 @@ import {
   getAuth,
   signInAnonymously,
   signOut,
-} from "@firebase/auth";
+} from "firebase/auth";
 
 use(require("chai-like"));
 use(require("chai-as-promised"));
