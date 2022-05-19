@@ -1,7 +1,7 @@
 {
-  "name": "@AntoninBeaufort/firestore-stripe-payments",
+  "name": "@antoninbeaufort/firestore-stripe-payments-v9",
   "repository": "https://github.com/AntoninBeaufort/stripe-firebase-extensions",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Client SDK for the firestore-stripe-payments Firebase Extension",
   "main": "./lib/index.js",
   "typings": "./lib/index.d.ts",

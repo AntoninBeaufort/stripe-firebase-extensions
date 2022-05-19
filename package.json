@@ -2,7 +2,6 @@
   "name": "stripe-firebase-extensions",
   "version": "1.0.0",
   "description": "Repository of Firebase extensions built by Stripe.",
-  "private": true,
   "scripts": {
     "format": "prettier --write \"**/*.{js,md,yml,ts,json,yaml}\"",
     "lint": "prettier --list-different \"**/*.{js,md,yml,ts,json,yaml}\"",

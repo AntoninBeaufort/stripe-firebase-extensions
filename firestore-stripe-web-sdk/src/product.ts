@@ -400,7 +400,6 @@ class FirestoreProductDAO implements ProductDAO {
   private async getProductSnapshotIfExists(
     productId: string
   ): Promise<QueryDocumentSnapshot<Product>> {
-    console.log(this.firestore, this.productsCollection, productId);
     const productRef: DocumentReference<Product> = doc(
       this.firestore,
       this.productsCollection,
@@ -479,7 +478,6 @@ class FirestoreProductDAO implements ProductDAO {
   private async getPriceSnapshots(
     productId: string
   ): Promise<QuerySnapshot<Price>> {
-    console.log(this.firestore, this.productsCollection, productId);
     const pricesCollection: CollectionReference<Price> = collection(
       this.firestore,
       this.productsCollection,
